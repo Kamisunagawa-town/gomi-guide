@@ -1,0 +1,72 @@
+site_name: 上砂川町 ごみ分別ガイド
+site_description: 上砂川町のごみの出し方・分別ルールを検索できます
+site_url: https://your-username.github.io/gomi-guide/
+
+theme:
+  name: material
+  language: ja
+  palette:
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替え
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替え
+  font:
+    text: Noto Sans JP
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  icon:
+    logo: material/delete-outline
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - ホーム: index.md
+  - ごみの出し方: how-to.md
+  - 分別事典:
+    - あ行: dictionary/a.md
+    # 今後追加
+    # - か行: dictionary/ka.md
+    # - さ行: dictionary/sa.md
+    # - た行: dictionary/ta.md
+    # - な行: dictionary/na.md
+    # - は行: dictionary/ha.md
+    # - ま行: dictionary/ma.md
+    # - や行: dictionary/ya.md
+    # - ら行: dictionary/ra.md
+    # - わ行: dictionary/wa.md
+
+extra:
+  social:
+    - icon: fontawesome/solid/building
+      link: https://town.kamisunagawa.hokkaido.jp/
+      name: 上砂川町公式サイト
+
+copyright: "&copy; 上砂川町"
