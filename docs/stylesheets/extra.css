@@ -1,0 +1,16 @@
+/* 表の見やすさ向上 */
+.md-typeset table:not([class]) th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+/* 分類の絵文字を見やすく */
+.md-typeset table:not([class]) td {
+    vertical-align: middle;
+    padding: 8px 12px;
+}
